@@ -1,0 +1,59 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Object",
+"class": "CellType",
+"language": "GDScript",
+"path": "res://objects/cell_type.gd"
+}, {
+"base": "Node2D",
+"class": "Creature",
+"language": "GDScript",
+"path": "res://objects/creature.gd"
+}, {
+"base": "Object",
+"class": "GameState",
+"language": "GDScript",
+"path": "res://objects/game_state.gd"
+}, {
+"base": "Object",
+"class": "Hex",
+"language": "GDScript",
+"path": "res://objects/hex.gd"
+}, {
+"base": "Object",
+"class": "HexField",
+"language": "GDScript",
+"path": "res://objects/hex_field.gd"
+}, {
+"base": "Object",
+"class": "SaveLoad",
+"language": "GDScript",
+"path": "res://utils/save_load.gd"
+} ]
+_global_script_class_icons={
+"CellType": "",
+"Creature": "",
+"GameState": "",
+"Hex": "",
+"HexField": "",
+"SaveLoad": ""
+}
+
+[application]
+
+config/name="LD-44"
+run/main_scene="res://scenes/menu.tscn"
+config/icon="res://icon.png"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

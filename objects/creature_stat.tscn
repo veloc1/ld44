@@ -1,0 +1,79 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://objects/creature_stat.gd" type="Script" id=1]
+[ext_resource path="res://assets/icons/armor.png" type="Texture" id=2]
+[ext_resource path="res://assets/icons/attack.png" type="Texture" id=3]
+[ext_resource path="res://assets/icons/health.png" type="Texture" id=4]
+
+[sub_resource type="Gradient" id=1]
+colors = PoolColorArray( 0, 0, 0, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+width = 24
+
+[node name="creature_stat" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="armor_s" type="Sprite" parent="."]
+position = Vector2( -102.668, 0 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 2 )
+
+[node name="armor" type="Label" parent="."]
+margin_left = -92.6704
+margin_top = -6.0
+margin_right = -68.6704
+margin_bottom = 8.0
+text = "100"
+
+[node name="armor_diff" type="Label" parent="."]
+margin_left = -64.0314
+margin_top = -6.0
+margin_right = -40.0314
+margin_bottom = 8.0
+text = "100"
+
+[node name="attack_s" type="Sprite" parent="."]
+position = Vector2( -24.3158, 0 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 3 )
+
+[node name="attack" type="Label" parent="."]
+margin_left = -17.1861
+margin_top = -6.0
+margin_right = 6.81389
+margin_bottom = 8.0
+text = "100"
+
+[node name="attack_diff" type="Label" parent="."]
+margin_left = 8.75116
+margin_top = -6.0
+margin_right = 32.7512
+margin_bottom = 8.0
+text = "100"
+
+[node name="health_s" type="Sprite" parent="."]
+position = Vector2( 50.7941, 0 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 4 )
+
+[node name="health" type="Label" parent="."]
+margin_left = 58.0
+margin_top = -6.0
+margin_right = 82.0
+margin_bottom = 8.0
+text = "100"
+
+[node name="health_diff" type="Label" parent="."]
+margin_left = 81.2355
+margin_top = -6.0
+margin_right = 105.235
+margin_bottom = 8.0
+text = "100"
+
+[node name="bg" type="Sprite" parent="."]
+rotation = -1.5708
+scale = Vector2( 1, 230 )
+z_index = -3
+texture = SubResource( 2 )

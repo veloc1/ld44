@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://objects/inventory.gd" type="Script" id=1]
+
+[node name="inventory" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="drop_tween" type="Tween" parent="."]
+
+[node name="mouse_timer" type="Timer" parent="."]
+wait_time = 0.3
+one_shot = true
